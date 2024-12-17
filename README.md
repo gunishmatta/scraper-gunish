@@ -16,6 +16,30 @@ This project is a **web scraper** built using **FastAPI** that scrapes product i
 
 ## Project Structure
 
+- `app/`: The main directory containing all application code.
+  - `api/`: Contains the API logic for routing and dependencies.
+    - `__init__.py`: Initializes the `api` module.
+    - `dependencies.py`: Defines dependencies for FastAPI endpoints (e.g., scraper dependency).
+    - `endpoints.py`: Contains API route definitions and logic for scraping products.
+  - `core/`: Contains the core functionality of the application.
+    - `__init__.py`: Initializes the `core` module.
+    - `auth.py`: Handles authentication and token validation logic.
+    - `cache.py`: Manages caching mechanisms (e.g., Redis).
+    - `config.py`: Holds configuration settings for the application.
+    - `database.py`: Handles database connections and models.
+    - `interfaces.py`: Defines interfaces or abstract classes for common services.
+    - `notifications.py`: Contains logic for sending notifications.
+  - `tests/`: Contains test cases for the application.
+    - `.gitignore`: Specifies files and directories to be ignored by Git.
+    - `README.md`: Documentation for testing the application.
+    - `__init__.py`: Initializes the `tests` module.
+    - `test_scraper.py`: Contains test cases for the scraper logic.
+  - `__init__.py`: Initializes the main application module.
+  - `main.py`: Entry point for the FastAPI application, where the app is instantiated.
+  - `models.py`: Contains data models used in the application (e.g., product, scraper).
+  - `scraper.py`: Contains the logic for scraping product data from the target website.
+  - `utils.py`: Contains utility functions for common tasks (e.g., parsing, data handling).
+
 
 
 
