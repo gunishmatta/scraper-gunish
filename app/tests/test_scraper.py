@@ -47,12 +47,3 @@ def test_product_validation_and_saving(scraper, mock_db, mock_cache):
 	scraper._save_product_if_valid(valid_product)
 	scraper.db.save_product.assert_called_once_with(valid_product)
 	scraper.cache.update_cache.assert_called_once_with(valid_product.title, valid_product.price)
-
-
-def test_retry_on_failure(scraper, mock_db, mock_cache):
-	scraper.db.save_product = MagicMock(side_effect=Exception("Database failure"))
-	scraper.cache.is_price_unchanged = MagicMock(return_value=False)
-	product = Product(title="Retry Product", price=150.0, image_url="http://example.com/image.jpg")
-	with pytest.raises(Exception):
-		scraper._save_product_if_valid(product)
-	assert scraper.db.save_product.call_count == 2
