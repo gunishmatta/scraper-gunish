@@ -1,5 +1,5 @@
-from fastapi import Depends, FastAPI, HTTPException, Query
-# from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
+from fastapi import Depends, FastAPI, HTTPException, Query, Security
+from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from redis import Redis
 
 from app.cache import RedisCache
@@ -8,7 +8,7 @@ from app.notifications import ConsoleNotifier
 from app.scraper import Scraper, ScraperConfig
 
 AUTH_TOKEN = "secret-token"
-# security = HTTPBearer()
+security = HTTPBearer()
 
 app = FastAPI()
 
@@ -25,16 +25,16 @@ cache = RedisCache()
 notifier = ConsoleNotifier()
 
 scraper = Scraper(db=db, cache=cache, notifier=notifier, config=config)
-#
-# def authenticate(credentials: HTTPAuthorizationCredentials = Depends(security)):
-#     if credentials.credentials != AUTH_TOKEN:
-#         raise HTTPException(status_code=403, detail="Unauthorized access")
 
-@app.get("/ping")
-def ping():
-    return {"data":"Pong"}
+def authenticate(credentials: HTTPAuthorizationCredentials = Security(security)):
+    if credentials.credentials != AUTH_TOKEN:
+        raise HTTPException(status_code=403, detail="Unauthorized access")
 
-@app.post("/scrape/")
+@app.get("/health")
+def health():
+    return {"data": "Service is live.","status":"success"}
+
+@app.post("/scrape/", dependencies=[Depends(authenticate)])
 def scrape_catalogue(
     pages_limit: int = Query(5, ge=1, le=100, description="Number of pages to scrape"),
     proxy: str = Query(None, description="Proxy string to use for requests"),
