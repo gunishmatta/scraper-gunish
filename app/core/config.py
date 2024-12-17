@@ -2,7 +2,7 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    auth_token: str = "secret-token"
+    auth_token: str
     base_url: str = "https://dentalstall.com/shop/"
     product_card_selector: str = "li.product"
     product_title_selector: str = "h2"
@@ -12,3 +12,6 @@ class Settings(BaseSettings):
 
     class Config:
         env_file = ".env"
+
+
+settings = Settings()
