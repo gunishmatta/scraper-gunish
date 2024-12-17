@@ -5,8 +5,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b68248ca-e94c-4ba8-a5c4-fcb04dd1154d" name="Changes" comment="update gitignore">
+      <change afterPath="$PROJECT_DIR$/app/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/dependencies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/endpoints.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/core/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/core/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/cache.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/cache.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/interfaces.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/interfaces.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/notifications.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/notifications.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/schemas.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tests/test_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/test_scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/products.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/1_x_GDC_Extraction_Forceps_Lo....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3A_MEDES_Bleaching_And_Night_....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_ESPE_Adper_Scotchbond_Mult....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_ESPE_Clinpro_Tooth_Creme....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_ESPE_Express_XT_VPS_Impres....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_ESPE_Impregum_Soft_–....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_ESPE_Imprint_Bite_Registra....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_ESPE_Pedodontic_Strip_Crow....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_ESPE_Restorative_Introduct....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_ESPE_Vitrebond_Plus_Light_....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_Espe_Composite_Syringe_Org....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_Espe_Filtek_Supreme_Flowab....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_Espe_Retraction_Capsule....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_Espe_SS_Crown_Primary_Mola....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_Espe_mixing_tips_(BLUE)_Pa....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_Unitek_AlastiK_Easy-To-Tie....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_Unitek_Alastik_Bobbin_Chai....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_Unitek_Gemini_Self_Ligatin....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_Unitek_Transbond_Plus_Colo....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3M_Unitek_Transbond_XT_Adhesi....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Adper_Easy_Bond_Self-....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Adper_Single_Bond_Uni....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Clinpro_Sealant_̵....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Elipar_Deepcure_Led_&amp;....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Filtek_Bulk_Fill_Comp....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Filtek_Z250_Xt_Restor....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Ketac_Universal_Glass....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Monophase_Polyether_I....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_P-60_Micro_Hybrid_Pos....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Pediatric_Strip_Crown....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Relyx_Ceramic_Primer....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Relyx_Luting_2_Refill....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Relyx_Veneer_Cement....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Sof-Lex_Finishing_Str....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Sof-Lex_Polishing_Dis....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Sof-Lex_Spiral_Wheels....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Stainless_Steel_Prima....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Vitrebond_Light_Cure_....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Espe_Vps_Tray_Adhesive....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Unitek_Clarity_Advanced_Ce....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Unitek_Forsus_Fatigue_Resi....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Unitek_Gemini_Metal_Twin_B....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Unitek_Unite_Adhesive_Syri....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3m_Unitek_Victory_Series_Twin....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Advance_Biotech_Osseomould....jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +120,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/core" />
       <recent name="$PROJECT_DIR$/app" />
     </key>
   </component>
@@ -154,19 +216,34 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app/scraper.py</url>
-          <line>166</line>
+          <line>132</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/app/database.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/app/scraper.py</url>
+          <line>106</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/scraper.py</url>
+          <line>107</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/scraper.py</url>
+          <line>108</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/scraper.py</url>
+          <line>109</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/atlys_scraper_gunish$atlys_scraper_gunish.coverage" NAME="atlys-scraper-gunish Coverage Results" MODIFIED="1734467621945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/atlys_scraper_gunish$atlys_scraper_gunish.coverage" NAME="atlys-scraper-gunish Coverage Results" MODIFIED="1734470183855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/atlys_scraper_gunish$.coverage" NAME=" Coverage Results" MODIFIED="1734456568830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/tests" />
   </component>
 </project>

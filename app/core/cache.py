@@ -1,6 +1,6 @@
 import redis
 
-from app.interfaces import AbstractCache
+from app.core.interfaces import AbstractCache
 
 
 class RedisCache(AbstractCache):

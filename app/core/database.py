@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from app.interfaces import AbstractDatabase
+from app.core.interfaces import AbstractDatabase
 from app.models import Product
 
 

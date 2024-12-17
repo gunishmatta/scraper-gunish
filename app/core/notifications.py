@@ -1,4 +1,4 @@
-from app.interfaces import AbstractNotifier
+from app.core.interfaces import AbstractNotifier
 
 
 class ConsoleNotifier(AbstractNotifier):

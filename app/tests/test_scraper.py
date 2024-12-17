@@ -2,7 +2,7 @@ import pytest
 from unittest.mock import MagicMock
 from app.models import Product
 from app.scraper import Scraper, ScraperConfig
-from app.interfaces import AbstractDatabase, AbstractCache, AbstractNotifier
+from app.core.interfaces import AbstractDatabase, AbstractCache, AbstractNotifier
 
 
 @pytest.fixture
