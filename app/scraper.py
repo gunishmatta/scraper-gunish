@@ -4,12 +4,12 @@ from typing import List, Optional
 import requests
 from bs4 import BeautifulSoup, Tag
 
+from app.core.config import settings
 from app.core.interfaces import AbstractCache, AbstractDatabase, AbstractNotifier
 from app.models import Product
 from app.utils import save_image_locally
 
-DEFAULT_HEADERS = {"User-Agent": "Mozilla/5.0"}
-RETRY_DELAY = 2  # Seconds
+
 
 
 class ScraperConfig:
@@ -32,7 +32,7 @@ class ScraperConfig:
         self.product_price_selector = product_price_selector
         self.original_price_selector = original_price_selector
         self.product_image_selector = product_image_selector
-        self.headers = headers or DEFAULT_HEADERS
+        self.headers = headers or settings.DEFAULT_HEADERS
         self.retries = retries
         self.timeout = timeout
 
@@ -90,7 +90,7 @@ class Scraper:
             except requests.exceptions.RequestException as e:
                 logging.warning(f"Failed to fetch {url}: {e}. Retries left: {retries}")
                 retries -= 1
-                time.sleep(RETRY_DELAY)
+                time.sleep(settings.RETRY_DELAY)
 
         logging.error(f"Skipping {url} after max retries.")
         return None

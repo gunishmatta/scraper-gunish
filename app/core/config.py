@@ -9,6 +9,8 @@ class Settings(BaseSettings):
     product_price_selector: str = "span.price ins span.woocommerce-Price-amount"
     original_price_selector: str = "del span.woocommerce-Price-amount"
     product_image_selector: str = "a img.attachment-woocommerce_thumbnail"
+    DEFAULT_HEADERS :dict = {"User-Agent": "Mozilla/5.0"}
+    RETRY_DELAY : int = 2  # Seconds
 
     class Config:
         env_file = ".env"
