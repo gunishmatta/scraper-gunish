@@ -13,10 +13,10 @@ Before you begin, ensure that the following software is installed on your system
 
 Steps to Run the Docker Image
 Clone the Repository
-`git clone <repository_url>
-cd <repository_name>`
+`git clone <repository_url>`
+`cd <repository_name>`
 
-After closing Run
+After cloning Run
 
 `docker-compose up -d --build
 `
